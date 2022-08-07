@@ -22,7 +22,7 @@ app.use(cors({ origin: true, credentials: true }));
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-// app.get("/", (req, res) => res.send("Hello world!"));
+app.get("/", (req, res) => res.send("OMG ITS SO DEPLOYED"));
 
 //Ensure index html file is served in case of user requesting a resource currently not in public folder
 app.get("*", (req, res) => {
