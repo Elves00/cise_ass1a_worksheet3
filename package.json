@@ -8,6 +8,7 @@
     "prepare-backend": "npm install",
     "prepare-react": "cd frontend && npm install",
     "build-react": "cd frontend && npm run build",
+    "test-react": "cd frontend && npm test",
     "start": "node app.js",
     "app": "nodemon app.js",
     "heroku-postbuild": "npm run prepare-react && npm run build-react"
