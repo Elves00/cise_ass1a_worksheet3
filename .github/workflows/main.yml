@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.8dddbdf0-3596-4167-9d02-9e75056aed4b}}
+          heroku_app_name: "cise_ass1a_worksheet3" #Must be unique in Heroku
+          heroku_email: "breconrose@gmail.com"
